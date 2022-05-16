@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_gray_900">
+
+    <Spinner
+        android:id="@+id/scale_type"
+        android:layout_width="390dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="3dp"
+        android:background="@color/blue_gray_800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="675dp"
+        android:background="@color/blue_gray_800"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="676dp"
+        android:backgroundTint="@color/blue_gray_800"
+        android:gravity="center"
+        app:icon="@drawable/ic_baseline_menu_24"
+        app:iconGravity="textStart"
+        app:iconPadding="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/notifications"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="53dp"
+        android:backgroundTint="@color/blue_gray_800"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:icon="@drawable/ic_baseline_notifications_24"
+        app:iconGravity="textStart"
+        app:iconPadding="-1dp"
+        app:layout_constraintBottom_toTopOf="@+id/notes_type_select"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:iconGravity="textStart" />
+
+    <RadioGroup
+        android:id="@+id/notes_type_select"
+        android:layout_width="390dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/chord_structure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue_gray_800"
+            android:button="@null"
+            android:text="b"
+            android:textAlignment="center"
+            android:textColor="@color/body"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue_gray_700"
+            android:button="@null"
+            android:clickable="false"
+            android:text="natural"
+            android:textAlignment="center"
+            android:textColor="@color/body"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue_gray_800"
+            android:button="@null"
+            android:text="#"
+            android:textAlignment="center"
+            android:textColor="@color/body"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/chord_structure"
+        android:layout_width="390dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="3dp"
+        android:background="@color/blue_gray_800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="349dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Tétrades"
+        android:textColor="@color/body"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="349dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Maior"
+        android:textColor="@color/body"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="348dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Estrutura dos Acordes"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Escala"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <RadioGroup
+        android:id="@+id/note_select"
+        android:layout_width="392dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="408dp">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/blue_gray_800"
+            android:button="@null"
+            android:text="C"
+            android:textAlignment="center"
+            android:textColor="@color/body"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/blue_gray_800"
+            android:button="@null"
+            android:text="D"
+            android:textAlignment="center"
+            android:textColor="@color/body"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton13"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/blue_gray_800"
+            android:button="@null"
+            android:text="E"
+            android:textAlignment="center"
+            android:textColor="@color/body"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton14"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/blue_gray_800"
+            android:button="@null"
+            android:text="F"
+            android:textAlignment="center"
+            android:textColor="@color/body"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton15"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/blue_gray_800"
+            android:button="@null"
+            android:text="G"
+            android:textAlignment="center"
+            android:textColor="@color/body"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton16"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/blue_gray_800"
+            android:button="@null"
+            android:text="A"
+            android:textAlignment="center"
+            android:textColor="@color/body"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton17"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/blue_gray_800"
+            android:button="@null"
+            android:text="B"
+            android:textAlignment="center"
+            android:textColor="@color/body"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
